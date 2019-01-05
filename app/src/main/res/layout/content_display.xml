@@ -29,10 +29,12 @@
                 android:layout_height="match_parent"/>
 
             <TextView
+                android:id="@+id/displayname"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="kehinde"
+                android:textSize="15sp"
                 />
 
         </TableRow>
@@ -56,10 +58,12 @@
                 android:layout_height="match_parent"/>
 
             <TextView
+                android:id="@+id/displaynumber"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="kehinde"
+                android:textSize="15sp"
                 />
 
         </TableRow>
@@ -83,22 +87,27 @@
                 android:layout_height="match_parent"/>
 
             <TextView
+                android:id="@+id/displayemail"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="kehinde"
+                android:textSize="15sp"
                 />
 
         </TableRow>
 
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
-            android:layout_height="15dp"/>
+            android:layout_height="25dp"/>
+
     </TableLayout>
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:textStyle="bold"
             android:textSize="15sp"
@@ -108,28 +117,33 @@
             />
 
         <android.support.v4.widget.Space
-            android:layout_width="5dp"
+            android:layout_width="10dp"
             android:layout_height="match_parent"/>
 
         <TextView
-            android:layout_weight="1"
+            android:id="@+id/displaymessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="kehinde"
+            android:textSize="15sp"
             />
 
     </LinearLayout>
 
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
-        android:layout_height="15dp"/>
+        android:layout_height="25dp"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
         <Button
+            android:id="@+id/call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Call"
@@ -141,10 +155,15 @@
             android:layout_height="match_parent" />
 
         <Button
+            android:id="@+id/sentemail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
             android:background="@color/colorPrimary"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
